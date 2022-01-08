@@ -13,6 +13,8 @@ class ImageChoiceViewController: UIViewController {
     @IBOutlet weak var choiceImageScoreNumberLabelOutlet: UILabel!
     @IBOutlet weak var choiceImageOverTimeNameLabelOutlet: UILabel!
     @IBOutlet weak var choiceImageOverTimeNunberLabelOutlet: UILabel!
+    @IBOutlet weak var choiceImageTimesNameOutlet: UILabel!
+    @IBOutlet weak var choiceImageTimesNumberOutlet: UILabel!
     @IBOutlet weak var choiceImageOutlet: UIImageView!
     @IBOutlet var choiceImageCollection: [UIButton]!
     

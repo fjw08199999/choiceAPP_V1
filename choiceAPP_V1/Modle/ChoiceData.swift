@@ -9,20 +9,32 @@ import Foundation
 import Metal
 import UIKit
 
-
+//產生問答題題庫格式
 struct ChoiceData {
     var question: String
     var answer: [String]
     var succece: Int
 }
 
-struct SystemText {
-    let inputName: String = "請輸入您的姓名："
-    let imageChoice: String = "猜猜看-圖片版"
-    let choiceButton: String = "猜猜看-文字版"
+//系統以及畫面使用的固定文字
+enum SystemText: String {
+    
+    case inputName = "請輸入您的姓名："
+    case imageChoice = "猜猜看-圖片版"
+    case choiceButton = "猜猜看-文字版"
+    case goToListTableViewButton = "歷史紀錄"
+    case score = "得分"
+    case time = "剩餘時間"
+    case lastTimes = "剩餘次數"
+    case totleScore = "總得分"
+    
+    var Text: String {
+     return self.rawValue
+     }
     
 }
 
+//題庫
 let questions: Array = [
     ChoiceData(question: "以下是年初四的節日稱謂？", answer: ["接神日", "送窮", "團圓", "洗邋遢"], succece: 0),
     ChoiceData(question: "以下那樣是農曆新年應節食品？", answer: ["梨", "柑", "橙", "桃"], succece: 0),

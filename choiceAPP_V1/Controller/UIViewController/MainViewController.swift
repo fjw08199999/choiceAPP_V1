@@ -15,10 +15,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var goToChoiceButtonOutlet: UIButton!
     @IBOutlet weak var goToListTableViewButtonOutlet: UIButton!
     
-    let inputNameText: String = "請輸入您的姓名："
-    let imageChoiceText: String = "猜猜看-圖片版"
-    let choiceButtonText: String = "猜猜看-文字版"
-    let goToListTableViewButtonText: String = "歷史紀錄"
+    let inputNameText: String = SystemText.inputName.rawValue
+    let imageChoiceText: String = SystemText.imageChoice.rawValue
+    let choiceButtonText: String = SystemText.choiceButton.rawValue
+    let goToListTableViewButtonText: String = SystemText.goToListTableViewButton.rawValue
     
     //畫面載入時Label以及Button需顯示的文字
     func mainViewControllerDisplayText() {
